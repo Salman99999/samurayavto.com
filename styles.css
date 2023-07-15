@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+nav{
+  height:90px;
+  background-color: #ff9000;
+  z-index: 10;
+}
+
+#logo{
+  display: flex;
+  border: #000 solid 0px;
+  border-radius: 50%;
+  background-color: #ff9000;
+  margin-top:40px;
+}
+
+#image-logo{
+  margin-left: -50px;
+  padding: 10px;
+}
+.buttons {
+font-size: 15px;
+font-weight: bold;
+color: #fff;
+background-color: #ff9000;
+width: 100% !important;
+padding: 10px 15px;
+margin: 0;
+}
+
+
+.last-image {
+margin-top: -18%;
+}
+
+#product{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+#featured{
+  font-weight: bold;
+}
+
+.display{
+  text-align:center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#card-motor{
+  background-image:url(images/auto-parts.jpeg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width:90%;
+  text-align:center;
+  padding-top:10%;
+  padding-bottom:10%;
+  color: #fff;
+}
+
+#card-motor-padding{
+  padding-left:10%;
+  padding-top:5%;
+  padding-bottom: 5%;
+}
+
+.color-for-button{
+  background-color:#ff9000;
+  color:#fff;
+}
+
+#clearance{
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#top{
+  font-size: 30px;
+  margin-top: -8px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#center{
+text-align:center;
+}
+
+#contact-section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+footer{
+  background-color: #ff9000;
+}
+
+#whatsapp{
+  padding-right: 50px; 
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  z-index: 20;
+  animation: jump 2.5s infinite;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  color:#fff;
+}
+
+.fa-whatsapp {
+  margin-top: 1px;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card {
+  border: none;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+}
+
+/* .card-body {
+  padding: 1.5rem;
+} */
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #ff9000;
+  border-color: #ff9000;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #cc7700;
+  border-color: #cc7700;
+}
+
+.contact-section {
+  background-color: #ff9000;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.contact-section #contact {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+}
+
+.contact-section .contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section .contact-info li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-section .contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-section .contact-info span {
+  color: #6c757d;
+}
+
+.container {
+  /* Default styles for desktop and larger screens */
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: #fff !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #fff !important;
+}
+
+.slide-3{
+  margin-top:100px;
+}
+
+
+@media  (max-width:550px) {
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+
+  #card-motor{
+    background-size: cover;
+  }
+
+  .contact-section{
+    height:500px;
+  }
+
+  .carousel-inner{
+      padding-top:20px;
+  }
+
+  .card-2{
+      margin-left:50%;
+      margin-top:-70.5%;
+  }
+
+  #logo{
+      background-color: transparent;
+      padding: 10px;
+  }
+
+  #image-logo{
+      height:120px;
+      margin-top:-100%;
+  }
+
+  .navbar-toggler{
+      margin-left: 80%;
+      margin-top: -35%;
+  }
+
+  .navbar{
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .slide-3{
+    margin-top:30px;
+  }
+
+  .navbar-collapse{
+    margin-top: -20px;
+  }
+
+  #whatsapp{
+     display: none;
+  }
+}
+

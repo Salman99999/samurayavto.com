@@ -1,0 +1,378 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#image-1{
+  background-image: url(images/auto-parts.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:-100px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#image-1 h1{
+  background-color: rgba(0, 0, 0, .4);
+  font-size: 60px;
+  padding: 15px;
+  margin-top: -100px;
+}
+
+#image-1 #second-line{
+  position: absolute;
+  margin-top: 100px;
+}
+
+
+nav{
+    height:100px;
+    background-color: #ff9000;
+    z-index: 10;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+    display: flex;
+    border: #000 solid 0px;
+    border-radius: 50%;
+    background-color: #ff9000;
+    margin-top:40px;
+}
+
+#image-logo{
+    margin-left: -50px;
+    padding: 10px;
+}
+.buttons{
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff9000;
+  width: 100% !important;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+#hyundai{
+    text-align:center;
+}
+
+#whatsapp{
+    padding-right: 50px; 
+  }
+
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 20;
+    animation: jump 2.5s infinite;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128C7E;
+    color:#fff;
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .fa-whatsapp {
+    margin-top: 1px;
+  }
+
+#product{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#products{
+    height:700px
+}
+
+.cards{
+    margin-top: 40px;
+}
+
+#contact-section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+
+  .display{
+    text-align:center;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .myCard {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  .myCard .myCard-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .myCard .myCard-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .myCard h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .myCard .price {
+    color: #888;
+    font-size: 18px;
+  }
+  
+  .myCard .buy-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff9000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .myCard .buy-button:hover {
+    background-color: #da7c03;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .myCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-primary {
+    background-color: #ff9000;
+    border-color: #ff9000;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #cc7700;
+    border-color: #cc7700;
+  }
+
+  
+.contact-section {
+  background-color: #ff9000;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.contact-section #contact {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+}
+
+.contact-section .contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section .contact-info li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-section .contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-section .contact-info span {
+  color: #6c757d;
+}
+
+.container {
+  /* Default styles for desktop and larger screens */
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+  
+  
+@media (max-width:550px) {
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+    .last-image{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .padding-for-tittle{
+        visibility: hidden;
+    }
+
+    nav{
+        height:90px;
+    }
+
+
+    #image-1 h1{
+      font-size: 20px;
+      margin-top: -40px;
+       text-align: center;
+    }
+
+    #image-1 #second-line{
+      margin-top: 65px;
+    }
+
+    .carousel-inner{
+        padding-top:20px;
+    }
+
+    .contact-section{
+      height:500px;
+    }
+
+    #image-1{
+      height: 300px;
+      margin-top: -10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .card-2{
+        margin-left:50%;
+        margin-top:-70.5%;
+    }
+
+    #image-logo{
+        height:120px;
+        margin-top:-100%;
+    }
+
+    .navbar-toggler{
+        margin-left: 80%;
+        margin-top: -35%;
+    }
+
+    .navbar{
+      width: 100% !important;
+      padding: 0;
+    }
+
+    .navbar-collapse{
+      margin-top: -20px;
+    }
+
+    #whatsapp{
+       display: none;
+    }
+
+    #logo{
+      background-color: transparent;
+      padding: 10px;
+    }
+
+      #product{
+        height:300px;
+        margin-top:-40px;
+      }
+      
+}

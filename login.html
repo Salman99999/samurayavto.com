@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxil Ol</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/b967a10861.js" crossorigin="anonymous"></script>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand pl-5" id="logo" href="index.html"><img id="image-logo" src="images/icon.png" alt="logo" height="210px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link buttons text-white pl-5" href="index.html">ƏSAS SƏHİFƏ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link buttons text-white pl-5" href="products.html">EHTİYAT HİSSƏLƏRİ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link buttons text-white pl-5" href="login.html">DAXİL OL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link buttons text-white pl-5 scrool" href="index.html#contact">ƏLAQƏ</a>
+            </li>
+          </ul>
+        </div>
+      <a href="https://api.whatsapp.com/send?phone=994556004151" target="_blank"><img id="whatsapp" src="images/whatsappaze-removebg-preview.png" height="60px" alt="whatsapp"> </a>
+      </nav>
+      <a href="https://api.whatsapp.com/send?phone=994556004151" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <div class="login-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Daxil Ol</h1>
+        <form id="loginForm">
+          <div class="input-container">
+            <input type="text" placeholder="İstifadəçi adı" name="username" id="username" required>
+          </div>
+          <div class="input-container">
+            <input type="password" placeholder="Parol" name="password" id="password" required>
+          </div>
+          <button type="submit">Daxil Ol</button>
+        </form>
+        <div id="errorContainer"></div>
+      </div>      
+      </div>
+
+      <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submission
+      
+          // Get the entered username and password
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+      
+          // Check if the login credentials are correct
+          if (username === "samuray123" && password === "12345") {
+            sessionStorage.setItem("loggedIn", "true"); // Store login status in session storage
+            window.location.href = "products.html"; // Redirect to products.html
+          } else {
+            sessionStorage.setItem("loggedIn", "false");
+            document.getElementById("errorContainer").textContent = "Invalid username or password";
+          }  
+
+
+        });
+      </script>
+      
+</body>
+</html>
