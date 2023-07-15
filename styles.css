@@ -62,12 +62,9 @@ margin-top: -18%;
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 540px;
+  height: 100%;
+  object-fit: cover;
 }
-
-/* .slide-3{
-  margin-top:100px;
-} */
 
 #card-motor{
   background-image:url(images/auto-parts.jpeg);
@@ -269,7 +266,9 @@ footer{
   background: #fff !important;
 }
 
-
+.slide-3{
+  margin-top:100px;
+}
 
 
 @media  (max-width:550px) {
